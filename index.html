@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+    <title>Pixel Art Maker</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <h1>Pixel Art Maker</h1>
+            <form>
+                <div class="fieldsContainer">
+                    <label class="fieldLabels">Width:</label>
+                    <input id="tableWidth" class="gridSetFields" value="15" type="number">
+                    <label class="fieldLabels">Height:</label>
+                    <input id="tableHeight" class="gridSetFields" value="15" type="number">
+                    <p class="error">Please check your entry, value cannot be less than 0 or more than 80</p>
+                </div>
+                    <button id="setButton">Click to set the grid</button>
+                    <div id="colorSetContainer">
+                        <h2>Set your own colors</h2>
+                        <label class="fieldLabels">Background:</label>
+                        <input type="color" id="colorPaletteBackground" value="#F88B82"> <!--alt color #B38EF0-->
+                        <label class="fieldLabels">Border:</label>
+                        <input type="color" id="colorPaletteBorder" value="#B4DC45"> <!--alt color #EE07D2-->
+                        <label class="fieldLabels">Color:</label>
+                        <input type="color" id="colorPaletteDraw" value="#DBD56E">
+                        
+                    </div>
+            </form>
+            
+        </header>
+            <table id="grid">
+            </table>
+        <footer>
+            <p>Create your own masterpiece!</p>
+            <p>Hint: use right click to select existing color</p>
+        </footer>
+    </div>    
+</body>
+</html>

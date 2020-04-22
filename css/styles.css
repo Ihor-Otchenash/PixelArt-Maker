@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #01BAEF;
+}
+
+.container {
+    padding-top: 3%;
+    color: #DBD56E;
+    font-family: 'Cute Font', cursive;
+    font-size: 35px;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+form {
+    padding-bottom: 30px;
+}
+
+.fieldsContainer {
+    margin-bottom: 20px;
+}
+
+.gridSetFields {
+    border: 0px;
+    border-radius: 10px;
+    width: 75px;
+    font-size: 25px;
+    padding: 0 0 5px 15px;
+    background-color: #005377;
+    color: #DBD56E;
+    font-family: 'Cute Font', cursive;
+}
+
+.error {
+    color: red;
+    font-size: 35px;
+    display: none;
+}
+
+.errorAppear {
+    display: block;
+}
+
+#setButton {
+    width: 300px;
+    height: 50px;
+    line-height: 5px;
+    border-radius: 10px;
+    background-color: #005377;
+    border: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #DBD56E;
+    font-family: 'Cute Font', cursive;
+    margin-bottom: 20px;
+}
+
+input[type = color] {
+    vertical-align: bottom;
+    border: 5px #005377 solid;
+    border-radius: 50%;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+}
+
+input[type = color]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type = color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 45px;
+}
+
+#setButton:hover {
+    cursor: pointer;
+}
+
+#setButton:focus, .gridSetFields, #colorPalette {
+    outline: none;
+}
+
+#grid {
+    display: inline-block;
+    border: 5px solid;
+    border-color: #B4DC45;
+    border-radius: 10px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #F88B82;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid;
+    border-color: inherit;
+}
+
+
+
+footer {
+    padding-top: 20px;
+    font-size: 50px;
+}
